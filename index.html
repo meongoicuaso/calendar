@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>lịch 2022</h1>
+    <div class="lich">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th style="display: flex; gap: 15rem;">
+                        <button id="pre" class="btn btn-info">pre</button>
+                        <span id="month">march</span>
+                        <button id="next" class="btn btn-info">next</button>
+                    </th>
+                </tr>
+                <tr>
+                    <th style="display: flex; width: 700px;">
+                        <span style="width: 100px;">mon</span>
+                        <span style="width: 100px;">tue</span>
+                        <span style="width: 100px;">wed</span>
+                        <span style="width: 100px;">thus</span>
+                        <span style="width: 100px;">fri</span>
+                        <span style="width: 100px;">sat</span>
+                        <span style="width: 100px;">sun</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="foot"
+                    style="display: grid; grid-template-columns: repeat(7, 100px); grid-template-rows: repeat(7, 50px)">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./calendar.js"></script>
+</body>
+
+</html>
